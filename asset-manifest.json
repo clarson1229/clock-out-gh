@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/clock-out-gh/static/css/main.2cce8147.chunk.css",
+    "main.js": "/clock-out-gh/static/js/main.ce9d8071.chunk.js",
+    "main.js.map": "/clock-out-gh/static/js/main.ce9d8071.chunk.js.map",
+    "runtime~main.js": "/clock-out-gh/static/js/runtime~main.3c152f60.js",
+    "runtime~main.js.map": "/clock-out-gh/static/js/runtime~main.3c152f60.js.map",
+    "static/js/2.b41502e9.chunk.js": "/clock-out-gh/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/clock-out-gh/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/clock-out-gh/index.html",
+    "precache-manifest.3235e42065f3e28d9785dee571964a1e.js": "/clock-out-gh/precache-manifest.3235e42065f3e28d9785dee571964a1e.js",
+    "service-worker.js": "/clock-out-gh/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/clock-out-gh/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/clock-out-gh/static/media/logo.5d5d9eef.svg"
+  }
+}
