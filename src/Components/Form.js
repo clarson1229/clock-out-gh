@@ -16,13 +16,11 @@ function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     var tempTimeOfDay = values.timeOfDay;
-    const temp = 40 - values.hours;
+    const temp = values.goalHours - values.hours;
     const timeLeft = temp * 60 + parseInt(values.timeInMins, 10);
     const outMin = timeLeft % 60;
     var outHour = parseInt(timeLeft / 60, 10) + parseInt(values.timeInHours, 10);
-    debugger;
     while (outHour > 12){
-      debugger;
       outHour = outHour - 12;
       if (tempTimeOfDay === "AM"){
         tempTimeOfDay = "PM"
@@ -30,7 +28,6 @@ function Form() {
         tempTimeOfDay = "AM"
       }
     }
-    debugger;
     if (outMin < 10) {
       const result = outHour + ":0" + outMin + tempTimeOfDay;
       setOutString(result);
@@ -42,7 +39,7 @@ function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className='top'>
         Goal Hours:
         <input
           className='goalHoursInput'
@@ -63,7 +60,7 @@ function Form() {
         />
       </label>
 
-      <label>
+      <label className='bottom'>
         <br />
         <br />
         Time in:
@@ -82,16 +79,15 @@ function Form() {
           value={values.timeInMins}
           onChange={handleInputChange}
         />
+        <select 
+          name='timeOfDay' 
+          onChange={handleInputChange} 
+          value={values.timeOfDay}
+        >
+          <option value='AM'>AM</option>
+          <option value='PM'>PM</option>
+        </select>
       </label>
-      <select 
-        name='timeOfDay' 
-        onChange={handleInputChange} 
-        value={values.timeOfDay}
-      >
-        <option value='AM'>AM</option>
-        <option value='PM'>PM</option>
-      </select>
-
       <input type="submit" value="Submit" />
 
       <div className="output" hidden={false}>
