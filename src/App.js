@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className='HeaderStuff'>
-        <h1>When should I clock out </h1>
-        <h2>Input: Hours worked and Clock in time. </h2>
+        <h1>When should I clock out?</h1>
+        <h2>Input: The hours worked and The time you clocked in.</h2>
       </div>
       <Form />
     </div>
