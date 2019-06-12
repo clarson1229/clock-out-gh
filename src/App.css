@@ -12,7 +12,7 @@
 }
 .HeaderStuff{
   
-  color: red;
+  color: green;
 }
 .App-header {
   background-color: #282c34;
@@ -24,7 +24,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.goalHoursInput{
+  width: 20px;
+}
+.timeInput{
+  width: 40px;
+}
 .App-link {
   color: #61dafb;
 }

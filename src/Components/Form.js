@@ -6,7 +6,8 @@ function Form() {
     hours: "",
     timeInHours: "",
     timeInMins: "", 
-    timeOfDay: "AM"
+    timeOfDay: "AM",
+    goalHours: "40"
   });
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -42,6 +43,17 @@ function Form() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
+        Goal Hours:
+        <input
+          className='goalHoursInput'
+          name="goalHours"
+          type="text"
+          value={values.goalHours}
+          onChange={handleInputChange}
+        />
+      </label>
+
+      <label>
         Hours:
         <input
           name="hours"
@@ -50,11 +62,13 @@ function Form() {
           onChange={handleInputChange}
         />
       </label>
+
       <label>
         <br />
         <br />
         Time in:
         <input
+          className='timeInput'
           name="timeInHours"
           type="text"
           value={values.timeInHours}
@@ -62,6 +76,7 @@ function Form() {
         />
         :
         <input
+          className='timeInput'
           name="timeInMins"
           type="text"
           value={values.timeInMins}
