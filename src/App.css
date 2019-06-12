@@ -26,9 +26,11 @@
 }
 .goalHoursInput{
   width: 30px;
+  padding: 4px;
 }
 .timeInput{
   width: 50px;
+  padding: 4px;
 }
 .top{
   padding: 4px;
@@ -36,6 +38,10 @@
 }
 .bottom{
   padding: 4px;
+  font-size: large;
+}
+.output{
+  color: green;
   font-size: large;
 }
 .App-link {

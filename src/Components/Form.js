@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Form() {
   const [outString, setOutString] = useState("");
+  const [hidden, setHidden] = useState(true);
   const [values, setValues] = useState({
     hours: "",
     timeInHours: "",
@@ -35,6 +36,7 @@ function Form() {
       const result = outHour + ":" + outMin + tempTimeOfDay;
       setOutString(result);
     }
+    setHidden(false);
   }
 
   return (
@@ -63,7 +65,7 @@ function Form() {
       <label className='bottom'>
         <br />
         <br />
-        Time in:
+        Time in  
         <input
           className='timeInput'
           name="timeInHours"
@@ -90,7 +92,7 @@ function Form() {
       </label>
       <input type="submit" value="Submit" />
 
-      <div className="output" hidden={false}>
+      <div className="output" hidden={hidden}>
         <h2>Clock out Time </h2>
         <div name="outString">{outString}</div>
       </div>
