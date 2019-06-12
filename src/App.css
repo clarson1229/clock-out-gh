@@ -36,9 +36,10 @@
 .paddingleftRight{
   margin-right: 4px;
   margin-left: 4px;
+  font-size: large;
 }
 .top{
-  font-size: medium;
+  font-size: large;
 }
 .bottom{
   font-size: large;

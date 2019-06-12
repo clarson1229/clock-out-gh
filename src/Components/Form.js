@@ -50,9 +50,6 @@ function Form() {
           value={values.goalHours}
           onChange={handleInputChange}
         />
-      </label>
-
-      <label>
         Hours:
         <input
           className='paddingleftRight'
@@ -62,7 +59,6 @@ function Form() {
           onChange={handleInputChange}
         />
       </label>
-
       <label className='bottom'>
         <br />
         <br />
