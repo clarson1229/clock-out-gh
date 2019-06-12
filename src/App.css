@@ -31,15 +31,16 @@
 .timeInput{
   width: 50px;
   padding: 4px;
+}
+
+.paddingleftRight{
   margin-right: 4px;
   margin-left: 4px;
 }
 .top{
-  
   font-size: medium;
 }
 .bottom{
-  
   font-size: large;
 }
 .output{

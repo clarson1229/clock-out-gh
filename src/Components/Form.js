@@ -44,7 +44,7 @@ function Form() {
       <label className='top'>
         Goal Hours:
         <input
-          className='goalHoursInput'
+          className='goalHoursInput paddingleftRight'
           name="goalHours"
           type="text"
           value={values.goalHours}
@@ -55,6 +55,7 @@ function Form() {
       <label>
         Hours:
         <input
+          className='paddingleftRight'
           name="hours"
           type="text"
           value={values.hours}
@@ -67,7 +68,7 @@ function Form() {
         <br />
         Time in =
         <input
-          className='timeInput'
+          className='timeInput paddingleftRight'
           name="timeInHours"
           type="text"
           value={values.timeInHours}
@@ -75,13 +76,14 @@ function Form() {
         />
         :
         <input
-          className='timeInput'
+          className='timeInput paddingleftRight'
           name="timeInMins"
           type="text"
           value={values.timeInMins}
           onChange={handleInputChange}
         />
         <select 
+          className='paddingleftRight'
           name='timeOfDay' 
           onChange={handleInputChange} 
           value={values.timeOfDay}
