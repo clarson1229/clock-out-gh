@@ -5,7 +5,8 @@ function Form() {
   const [values, setValues] = useState({
     hours: "",
     timeInHours: "",
-    timeInMins: ""
+    timeInMins: "", 
+    timeOfDay: "AM"
   });
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -57,6 +58,15 @@ function Form() {
           onChange={handleInputChange}
         />
       </label>
+      <select 
+        name='timeOfDay' 
+        onChange={handleInputChange} 
+        value={values.timeOfDay}
+      >
+        <option value='AM'>AM</option>
+        <option value='PM'>PM</option>
+      </select>
+      
       <input type="submit" value="Submit" />
       <div className="output" hidden={false}>
         <h2>Clock out Time </h2>
