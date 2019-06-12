@@ -30,10 +30,10 @@ function Form() {
       }
     }
     if (outMin < 10) {
-      const result = outHour + ":0" + outMin + tempTimeOfDay;
+      const result = outHour + ":0" + outMin +" "+ tempTimeOfDay;
       setOutString(result);
     } else {
-      const result = outHour + ":" + outMin + tempTimeOfDay;
+      const result = outHour + ":" + outMin +" "+tempTimeOfDay;
       setOutString(result);
     }
     setHidden(false);
@@ -65,7 +65,7 @@ function Form() {
       <label className='bottom'>
         <br />
         <br />
-        Time in  
+        Time in =
         <input
           className='timeInput'
           name="timeInHours"

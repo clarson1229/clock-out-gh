@@ -31,18 +31,20 @@
 .timeInput{
   width: 50px;
   padding: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 .top{
-  padding: 4px;
+  
   font-size: medium;
 }
 .bottom{
-  padding: 4px;
+  
   font-size: large;
 }
 .output{
   color: green;
-  font-size: large;
+  font-size: x-large;
 }
 .App-link {
   color: #61dafb;
