@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4e78f7dbd32026ab8d3e642ccc6313b",
+    "revision": "290c1496d62193fba77901f9fed573ed",
     "url": "/clock-out-gh/index.html"
   },
   {
