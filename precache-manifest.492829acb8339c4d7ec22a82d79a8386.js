@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a286b015d885904af40054765effe88",
+    "revision": "d5f3fd7f04ab6022b466981466ec75d9",
     "url": "/clock-out-gh/index.html"
   },
   {
-    "revision": "c0feceb2a8ce60ad8f47",
-    "url": "/clock-out-gh/static/css/main.209f7834.chunk.css"
+    "revision": "027862e6f358d67ef0c3",
+    "url": "/clock-out-gh/static/css/main.58f8b0e3.chunk.css"
   },
   {
     "revision": "8f0cc2e9ef14a7d510da",
     "url": "/clock-out-gh/static/js/2.0fcbf4f6.chunk.js"
   },
   {
-    "revision": "c0feceb2a8ce60ad8f47",
+    "revision": "027862e6f358d67ef0c3",
     "url": "/clock-out-gh/static/js/main.8de21a59.chunk.js"
   },
   {

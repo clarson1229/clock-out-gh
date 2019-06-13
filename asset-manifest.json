@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/clock-out-gh/static/css/main.209f7834.chunk.css",
+    "main.css": "/clock-out-gh/static/css/main.58f8b0e3.chunk.css",
     "main.js": "/clock-out-gh/static/js/main.8de21a59.chunk.js",
     "main.js.map": "/clock-out-gh/static/js/main.8de21a59.chunk.js.map",
     "runtime~main.js": "/clock-out-gh/static/js/runtime~main.3c152f60.js",
@@ -8,8 +8,8 @@
     "static/js/2.0fcbf4f6.chunk.js": "/clock-out-gh/static/js/2.0fcbf4f6.chunk.js",
     "static/js/2.0fcbf4f6.chunk.js.map": "/clock-out-gh/static/js/2.0fcbf4f6.chunk.js.map",
     "index.html": "/clock-out-gh/index.html",
-    "precache-manifest.823a218155c67a1ed704927b4c3c9b5b.js": "/clock-out-gh/precache-manifest.823a218155c67a1ed704927b4c3c9b5b.js",
+    "precache-manifest.492829acb8339c4d7ec22a82d79a8386.js": "/clock-out-gh/precache-manifest.492829acb8339c4d7ec22a82d79a8386.js",
     "service-worker.js": "/clock-out-gh/service-worker.js",
-    "static/css/main.209f7834.chunk.css.map": "/clock-out-gh/static/css/main.209f7834.chunk.css.map"
+    "static/css/main.58f8b0e3.chunk.css.map": "/clock-out-gh/static/css/main.58f8b0e3.chunk.css.map"
   }
 }
