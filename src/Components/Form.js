@@ -21,7 +21,14 @@ function Form() {
     const timeLeft = temp * 60 + parseInt(values.timeInMins, 10);
     const outMin = timeLeft % 60;
     var outHour = parseInt(timeLeft / 60, 10) + parseInt(values.timeInHours, 10);
-   
+    
+    var outHour;
+    if(values.timeInHours == 12){
+      outHour = parseInt( timeLeft / 60, 10) + parseInt(values.timeInHours, 10) - 12;
+    }
+    else {
+      outHour = parseInt(timeLeft / 60, 10) + parseInt(values.timeInHours, 10);
+    }
     while (outHour >= 12 && values.timeInHours <= 12){
       outHour = outHour - 12;
       if (tempTimeOfDay === "AM"){
