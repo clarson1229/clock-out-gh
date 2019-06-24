@@ -20,10 +20,8 @@ function Form() {
     const temp = values.goalHours - values.hours;
     const timeLeft = temp * 60 + parseInt(values.timeInMins, 10);
     const outMin = timeLeft % 60;
-    var outHour = parseInt(timeLeft / 60, 10) + parseInt(values.timeInHours, 10);
-    
     var outHour;
-    if(values.timeInHours == 12){
+    if(values.timeInHours === 12){
       outHour = parseInt( timeLeft / 60, 10) + parseInt(values.timeInHours, 10) - 12;
     }
     else {
