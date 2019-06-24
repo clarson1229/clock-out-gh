@@ -35,6 +35,7 @@ function Form() {
         tempTimeOfDay = "AM"
       }
     }
+    if (outHour == 0) outHour += 12;
     if (outMin < 10) {
       const result = outHour + ":0" + outMin +" "+ tempTimeOfDay;
       setOutString(result);
