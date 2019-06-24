@@ -22,25 +22,12 @@ function Form() {
     const outMin = timeLeft % 60;
     var outHour = parseInt(timeLeft / 60, 10) + parseInt(values.timeInHours, 10);
    
-    if (tempTimeOfDay === 'PM'){
-      tempTimeOfDay = "AM"
-      while (outHour > 12){
-        outHour = outHour - 12;
-        if (tempTimeOfDay === "AM"){
-          tempTimeOfDay = "PM"
-        }else {
-          tempTimeOfDay = "AM"
-        }
-      }
-
-    }else {
-      while (outHour > 12){
-        outHour = outHour - 12;
-        if (tempTimeOfDay === "AM"){
-          tempTimeOfDay = "PM"
-        }else {
-          tempTimeOfDay = "AM"
-        }
+    while (outHour >= 12 && values.timeInHours <= 12){
+      outHour = outHour - 12;
+      if (tempTimeOfDay === "AM"){
+        tempTimeOfDay = "PM"
+      }else {
+        tempTimeOfDay = "AM"
       }
     }
     if (outMin < 10) {
