@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5f3fd7f04ab6022b466981466ec75d9",
+    "revision": "ca9091d6f721032f70c56496ef7bccf9",
     "url": "/clock-out-gh/index.html"
   },
   {
-    "revision": "027862e6f358d67ef0c3",
+    "revision": "5566fa96e06c94c50db5",
     "url": "/clock-out-gh/static/css/main.58f8b0e3.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clock-out-gh/static/js/2.0fcbf4f6.chunk.js"
   },
   {
-    "revision": "027862e6f358d67ef0c3",
-    "url": "/clock-out-gh/static/js/main.8de21a59.chunk.js"
+    "revision": "5566fa96e06c94c50db5",
+    "url": "/clock-out-gh/static/js/main.b54632bb.chunk.js"
   },
   {
     "revision": "df4bb08772ff301ffb73",
