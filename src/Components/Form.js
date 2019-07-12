@@ -3,8 +3,12 @@ import React, { useState } from "react";
 function Form() {
   const [outString, setOutString] = useState("");
   const [hidden, setHidden] = useState(true);
+  const [color, setColor] = useState('Red');
+  const [lunch, setLunch] =useState(true);
   const [values, setValues] = useState({
     hours: "",
+    lunchTimeHours: 0,
+    lunchTimeMins: 0,
     timeInHours: "",
     timeInMins: "", 
     timeOfDay: "AM",
@@ -14,11 +18,28 @@ function Form() {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
+  const handleLunch = (event)=>{
+    event.preventDefault();
+    setLunch(!lunch);
+  }
   function handleSubmit(event) {
     event.preventDefault();
     var tempTimeOfDay = values.timeOfDay;
     const temp = values.goalHours - values.hours;
-    const timeLeft = temp * 60 + parseInt(values.timeInMins, 10);
+    var timeLeft = temp * 60 + parseInt(values.timeInMins, 10);
+    
+    if (values.lunchTimeHours){
+      console.log(timeLeft)
+      timeLeft = timeLeft + (values.lunchTimeHours * 60);
+      console.log(timeLeft)
+      console.log('hours hit')
+    }
+    if (values.lunchTimeMins){
+      
+      timeLeft = timeLeft + parseInt(values.lunchTimeMins, 10);
+      console.log(timeLeft)
+    }
+  
     const outMin = timeLeft % 60;
     var outHour;
     if(values.timeInHours === 12){
@@ -35,7 +56,7 @@ function Form() {
         tempTimeOfDay = "AM"
       }
     }
-    if (outHour == 0) outHour += 12;
+    if (outHour === 0) outHour += 12;
     if (outMin < 10) {
       const result = outHour + ":0" + outMin +" "+ tempTimeOfDay;
       setOutString(result);
@@ -65,8 +86,37 @@ function Form() {
           value={values.hours}
           onChange={handleInputChange}
         />
+        <button 
+          className='lunch'
+          onClick={handleLunch}
+        /> Lunch? 
+      
       </label>
-      <label className='bottom'>
+      
+      <label hidden={lunch}>
+        <div>
+          <br/>
+          Enter how long of a lunch break you intend to take. 
+          <br/>
+          Hours
+          <input 
+            name='lunchTimeHours'
+            type='text'
+            value={values.lunchTimeHours}
+            onChange={handleInputChange}
+          />
+          Minutes
+          <input 
+            name='lunchTimeMins'
+            type='text'
+            value={values.lunchTimeMins}
+            onChange={handleInputChange}
+          />
+           
+        </div>
+      </label>
+
+      <label className='bottom' backgroundColor={color}>
         <br />
         <br />
         Time in =
